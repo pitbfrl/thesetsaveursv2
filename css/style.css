@@ -6,6 +6,7 @@ body {
     background: url(/images/backgroundv3.jpg), #f0c38f;
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 nav {
     display: flex;
@@ -93,6 +94,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    bottom: 5%;
 }
 .copyright {
     text-decoration: none;
@@ -112,6 +115,7 @@ footer {
     width: 160px;
     height: 40px;
     transition: color .2s;
+    z-index: -1;
 
 }
 .contact-btn-2:hover {
@@ -125,3 +129,134 @@ footer {
     font-weight: 200;
     margin: 0 0 0 3%;
 }
+#menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    right: 2%;
+    top: 3%;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #f0c38f;
+    transition-duration: .25s;
+    z-index: 2;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+  .hamburger-menu {
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background: url(/images/mobile-background.JPEG), #f0c38f;
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position: 70% 0%;
+    }
+    nav {
+        padding: 2% 2% 0 2%;
+        align-items: center;
+    }
+    nav a {
+        font-size: 90%;
+    }
+    .contact-btn {
+        font-size: 13px;
+        width: 120px;
+        height: 30px;
+    }
+    .store-name {
+        font-size: 50px;
+    }
+    .description {
+        width: 90%;
+        font-weight: 300;
+    }
+    .names {
+        margin: 40% 0 0 0;
+    }
+    .contact-btn-2 {
+        display: none;
+    }
+    .copyright {
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0;
+    }
+    i {
+        font-size: 17px;
+    }
+    .icons-container {
+        display: none;
+    }
+    .location {
+        font-size: 19px;
+        margin: 0;
+        font-weight: 400;
+    }
+    footer {
+        margin: 55% 0 0 0;
+        bottom: 1%;
+        position: sticky;
+    }
+    .nav {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+  }
