@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/images/backgroundv3.jpg), #f0c38f;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2% 0 1%;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 120%;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+nav a:hover {
+    color: #f0c38f;
+}
+nav img {
+    width: 6%;
+}
+.nav {
+    display: flex;
+    gap: 20px;
+}
+.contact-btn {
+    border: #f0c38f 2px solid;
+    background: transparent;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 18px;
+    font-weight: 700;
+    width: 150px;
+    height: 35px;
+    transition: color .2s;
+}
+.contact-btn:hover {
+    color: #f0c38f;
+}
+.owner-name {
+    color: white;
+    font-family: 'Spectral', serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    padding: 0;
+}
+.store-name {
+    color: white;
+    font-family: 'Spectral', serif;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 1% 0;
+    font-size: 60px;
+}
+.description {
+    color: white;
+    font-family: 'Spectral', serif;
+    font-weight: 200;
+    text-align: center;
+    width: 40%;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+}
+.names {
+    margin: 15% 0 0% 0;
+}
+i {
+    color: white;
+    font-size: 33px;
+    transition: color .2s;
+}
+i:hover {
+    color: #f0c38f;
+}
+.icons-container {
+    letter-spacing: 65px;
+    display: flex;
+}
+footer {
+    margin: 19% 0 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.copyright {
+    text-decoration: none;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 3% 0 0;
+}
+.contact-btn-2 {
+    border: #f0c38f 2px solid;
+    background: transparent;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    font-weight: 700;
+    width: 160px;
+    height: 40px;
+    transition: color .2s;
+
+}
+.contact-btn-2:hover {
+    color: #f0c38f;
+}
+.location {
+    text-decoration: none;
+    color: white;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 0 0 3%;
+}
